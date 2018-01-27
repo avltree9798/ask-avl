@@ -29,7 +29,7 @@ $GLOBALS['config'] = [
     'database'      => [
         'hostname' => 'localhost',
         'username' => 'dev',
-        'password' => 'leonie',
+        'password' => '',
         'database' => 'ask'
     ]
 ];
