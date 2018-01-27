@@ -24,7 +24,7 @@ class Router
      */
     protected $middleware_route = [
         'csrf' => [
-            'admin.do.login'
+            'www.do.login'
         ]
     ];
 
@@ -126,6 +126,7 @@ class Router
     {
         $return = null;
         foreach ($this->routes as $route) {
+            $this->params = [];
             $parts = $this->routerPart($route);
             $allUri = implode('', $this->routerPart($_SERVER['REQUEST_URI']));
             $allUri = explode('?', $allUri)[0];
@@ -135,7 +136,7 @@ class Router
                     preg_match('/{[^\s]+}/', $part, $matches);
                     if ($matches) {
                         $this->params[] = Router::uri($key);
-                        $allPart .= $part;
+                        $allPart .= Router::uri($key);
                     } else {
                         $allPart .= $part;
                     }

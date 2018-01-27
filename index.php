@@ -30,7 +30,7 @@ $GLOBALS['config'] = [
         'hostname' => 'localhost',
         'username' => 'dev',
         'password' => 'leonie',
-        'database' => 'pos'
+        'database' => 'ask'
     ]
 ];
 ini_set('session.save_path', $GLOBALS['config']['path']['session']);

@@ -76,14 +76,19 @@ class Model
         /**
          * @var \Model $model
          */
-        $model = Session::get('class-' . static::class);
+        $class = static::class;
+        $model = new $class();
         self::$query->query('SELECT * FROM `' . $model->table . '` WHERE `id` = ?', [
             $id
         ]);
-        $data = self::$query->fetchAllKV()[0];
-        $data = self::makeObject($data, $model);
+        $data = self::$query->fetchAllKV();
+        if (count($data)) {
+            $data = self::makeObject($data[0], $class);
+        } else {
+            $data = null;
+        }
 
-        return (self::$query->num_rows === 0) ? null : $data;
+        return $data;
     }
 
     /**
@@ -175,8 +180,12 @@ class Model
         self::$query->query($query, [
             $this->$primaryKey
         ]);
-        $data = self::$query->fetchAllKV()[0];
-        $data = self::makeObject($data, $relation);
+        $data = self::$query->fetchAllKV();
+        if (count($data)) {
+            $data = self::makeObject($data[0], $relation);
+        } else {
+            $data = null;
+        }
 
         return $data;
     }
@@ -195,10 +204,15 @@ class Model
         $class = new $relation();
         $query = 'SELECT `' . $class->table . '`.* FROM `' . $this->table . '` JOIN `' . $class->table . '` ON `' . $class->table . '`.`' . $primaryKey . '` = `' . $this->table . '`.`' . $foreignKey . '` WHERE `' . $class->table . '`.`' . $primaryKey . '` = ?';
         self::$query->query($query, [
-            $this->$primaryKey
+
+            $this->$foreignKey
         ]);
-        $data = self::$query->fetchAllKV()[0];
-        $data = self::makeObject($data, $relation);
+        $data = self::$query->fetchAllKV();
+        if (count($data)) {
+            $data = self::makeObject($data[0], $relation);
+        } else {
+            $data = null;
+        }
 
         return $data;
     }
@@ -211,7 +225,8 @@ class Model
         /**
          * @var \Model $model
          */
-        $model = Session::get('class-' . static::class);
+        $class = static::class;
+        $model = new $class();
         self::$query->query('SELECT * FROM `' . $model->table . '`');
         $data = self::$query->fetchAllKV();
         $data = self::makeArrayOfObject($data, $model);
@@ -236,7 +251,8 @@ class Model
      */
     public static function execute()
     {
-        $model = Session::get('class-' . static::class);
+        $class = static::class;
+        $model = new $class();
         $query = 'SELECT * FROM `' . $model->table . '` WHERE';
         $where = [];
         foreach (self::$wheres as $col => $val) {

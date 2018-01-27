@@ -1,0 +1,155 @@
+[27-Jan-2018 19:55:13 Asia/Jakarta] PHP Notice:  Undefined offset: 0 in /home/avltree/anjay/web/core/Classes/Model.php on line 201
+[27-Jan-2018 19:55:13 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /home/avltree/anjay/web/core/Classes/Model.php on line 101
+[27-Jan-2018 20:01:11 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/avltree/anjay/web/storage/caches/views/9f7aa9edcc4ac4a9b4a6804b62970b98 on line 27
+[27-Jan-2018 20:01:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined method Question::getAnswer() in /home/avltree/anjay/web/storage/caches/views/bef570204333503ec1833627b1adef48:19
+Stack trace:
+#0 /home/avltree/anjay/web/core/Classes/Template/Compiler.php(69): require_once()
+#1 /home/avltree/anjay/web/core/Classes/View.php(17): Compiler->render()
+#2 /home/avltree/anjay/web/app/Controllers/HomeController.php(47): View::load('user/profile.av...', Array)
+#3 /home/avltree/anjay/web/core/Classes/Router.php(44): HomeController->profile('avltree')
+#4 /home/avltree/anjay/web/core/autoload.php(72): Router->__construct()
+#5 /home/avltree/anjay/web/index.php(39): require_once('/home/avltree/a...')
+#6 {main}
+  thrown in /home/avltree/anjay/web/storage/caches/views/bef570204333503ec1833627b1adef48 on line 19
+[27-Jan-2018 20:02:34 Asia/Jakarta] PHP Notice:  Undefined offset: 0 in /home/avltree/anjay/web/core/Classes/Model.php on line 179
+[27-Jan-2018 20:02:34 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /home/avltree/anjay/web/core/Classes/Model.php on line 101
+[27-Jan-2018 20:09:22 Asia/Jakarta] PHP Notice:  Undefined variable: relation in /home/avltree/anjay/web/core/Classes/Model.php on line 86
+[27-Jan-2018 20:09:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/avltree/anjay/web/core/Classes/Model.php:104
+Stack trace:
+#0 /home/avltree/anjay/web/core/Classes/Model.php(86): Model::makeObject(Array, NULL)
+#1 /home/avltree/anjay/web/core/Classes/Auth.php(20): Model::find(1)
+#2 /home/avltree/anjay/web/storage/caches/views/087cb90a03c58fab4d8a2c5eba07c2ed(3): Auth::user()
+#3 /home/avltree/anjay/web/core/Classes/Template/Compiler.php(71): require_once('/home/avltree/a...')
+#4 /home/avltree/anjay/web/core/Classes/View.php(17): Compiler->render()
+#5 /home/avltree/anjay/web/app/Controllers/HomeController.php(47): View::load('user/profile.av...', Array)
+#6 /home/avltree/anjay/web/core/Classes/Router.php(44): HomeController->profile('avltree')
+#7 /home/avltree/anjay/web/core/autoload.php(72): Router->__construct()
+#8 /home/avltree/anjay/web/index.php(39): require_once('/home/avltree/a...')
+#9 {main}
+  thrown in /home/avltree/anjay/web/core/Classes/Model.php on line 104
+[27-Jan-2018 20:09:25 Asia/Jakarta] PHP Notice:  Undefined variable: relation in /home/avltree/anjay/web/core/Classes/Model.php on line 86
+[27-Jan-2018 20:09:25 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/avltree/anjay/web/core/Classes/Model.php:104
+Stack trace:
+#0 /home/avltree/anjay/web/core/Classes/Model.php(86): Model::makeObject(Array, NULL)
+#1 /home/avltree/anjay/web/core/Classes/Auth.php(20): Model::find(1)
+#2 /home/avltree/anjay/web/storage/caches/views/087cb90a03c58fab4d8a2c5eba07c2ed(3): Auth::user()
+#3 /home/avltree/anjay/web/core/Classes/Template/Compiler.php(71): require_once('/home/avltree/a...')
+#4 /home/avltree/anjay/web/core/Classes/View.php(17): Compiler->render()
+#5 /home/avltree/anjay/web/app/Controllers/HomeController.php(47): View::load('user/profile.av...', Array)
+#6 /home/avltree/anjay/web/core/Classes/Router.php(44): HomeController->profile('avltree')
+#7 /home/avltree/anjay/web/core/autoload.php(72): Router->__construct()
+#8 /home/avltree/anjay/web/index.php(39): require_once('/home/avltree/a...')
+#9 {main}
+  thrown in /home/avltree/anjay/web/core/Classes/Model.php on line 104
+[27-Jan-2018 20:10:35 Asia/Jakarta] PHP Notice:  Undefined variable: relation in /home/avltree/anjay/web/core/Classes/Model.php on line 86
+[27-Jan-2018 20:10:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/avltree/anjay/web/core/Classes/Model.php:104
+Stack trace:
+#0 /home/avltree/anjay/web/core/Classes/Model.php(86): Model::makeObject(Array, NULL)
+#1 /home/avltree/anjay/web/core/Classes/Auth.php(20): Model::find(1)
+#2 /home/avltree/anjay/web/storage/caches/views/087cb90a03c58fab4d8a2c5eba07c2ed(3): Auth::user()
+#3 /home/avltree/anjay/web/core/Classes/Template/Compiler.php(71): require_once('/home/avltree/a...')
+#4 /home/avltree/anjay/web/core/Classes/View.php(17): Compiler->render()
+#5 /home/avltree/anjay/web/app/Controllers/HomeController.php(47): View::load('user/profile.av...', Array)
+#6 /home/avltree/anjay/web/core/Classes/Router.php(44): HomeController->profile('avltree')
+#7 /home/avltree/anjay/web/core/autoload.php(72): Router->__construct()
+#8 /home/avltree/anjay/web/index.php(39): require_once('/home/avltree/a...')
+#9 {main}
+  thrown in /home/avltree/anjay/web/core/Classes/Model.php on line 104
+[27-Jan-2018 20:10:36 Asia/Jakarta] PHP Notice:  Undefined variable: relation in /home/avltree/anjay/web/core/Classes/Model.php on line 86
+[27-Jan-2018 20:10:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/avltree/anjay/web/core/Classes/Model.php:104
+Stack trace:
+#0 /home/avltree/anjay/web/core/Classes/Model.php(86): Model::makeObject(Array, NULL)
+#1 /home/avltree/anjay/web/core/Classes/Auth.php(20): Model::find(1)
+#2 /home/avltree/anjay/web/storage/caches/views/087cb90a03c58fab4d8a2c5eba07c2ed(3): Auth::user()
+#3 /home/avltree/anjay/web/core/Classes/Template/Compiler.php(71): require_once('/home/avltree/a...')
+#4 /home/avltree/anjay/web/core/Classes/View.php(17): Compiler->render()
+#5 /home/avltree/anjay/web/app/Controllers/HomeController.php(47): View::load('user/profile.av...', Array)
+#6 /home/avltree/anjay/web/core/Classes/Router.php(44): HomeController->profile('avltree')
+#7 /home/avltree/anjay/web/core/autoload.php(72): Router->__construct()
+#8 /home/avltree/anjay/web/index.php(39): require_once('/home/avltree/a...')
+#9 {main}
+  thrown in /home/avltree/anjay/web/core/Classes/Model.php on line 104
+[27-Jan-2018 20:10:37 Asia/Jakarta] PHP Notice:  Undefined variable: relation in /home/avltree/anjay/web/core/Classes/Model.php on line 86
+[27-Jan-2018 20:10:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/avltree/anjay/web/core/Classes/Model.php:104
+Stack trace:
+#0 /home/avltree/anjay/web/core/Classes/Model.php(86): Model::makeObject(Array, NULL)
+#1 /home/avltree/anjay/web/core/Classes/Auth.php(20): Model::find(1)
+#2 /home/avltree/anjay/web/storage/caches/views/087cb90a03c58fab4d8a2c5eba07c2ed(3): Auth::user()
+#3 /home/avltree/anjay/web/core/Classes/Template/Compiler.php(71): require_once('/home/avltree/a...')
+#4 /home/avltree/anjay/web/core/Classes/View.php(17): Compiler->render()
+#5 /home/avltree/anjay/web/app/Controllers/HomeController.php(47): View::load('user/profile.av...', Array)
+#6 /home/avltree/anjay/web/core/Classes/Router.php(44): HomeController->profile('avltree')
+#7 /home/avltree/anjay/web/core/autoload.php(72): Router->__construct()
+#8 /home/avltree/anjay/web/index.php(39): require_once('/home/avltree/a...')
+#9 {main}
+  thrown in /home/avltree/anjay/web/core/Classes/Model.php on line 104
+[27-Jan-2018 20:10:37 Asia/Jakarta] PHP Notice:  Undefined variable: relation in /home/avltree/anjay/web/core/Classes/Model.php on line 86
+[27-Jan-2018 20:10:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/avltree/anjay/web/core/Classes/Model.php:104
+Stack trace:
+#0 /home/avltree/anjay/web/core/Classes/Model.php(86): Model::makeObject(Array, NULL)
+#1 /home/avltree/anjay/web/core/Classes/Auth.php(20): Model::find(1)
+#2 /home/avltree/anjay/web/storage/caches/views/087cb90a03c58fab4d8a2c5eba07c2ed(3): Auth::user()
+#3 /home/avltree/anjay/web/core/Classes/Template/Compiler.php(71): require_once('/home/avltree/a...')
+#4 /home/avltree/anjay/web/core/Classes/View.php(17): Compiler->render()
+#5 /home/avltree/anjay/web/app/Controllers/HomeController.php(47): View::load('user/profile.av...', Array)
+#6 /home/avltree/anjay/web/core/Classes/Router.php(44): HomeController->profile('avltree')
+#7 /home/avltree/anjay/web/core/autoload.php(72): Router->__construct()
+#8 /home/avltree/anjay/web/index.php(39): require_once('/home/avltree/a...')
+#9 {main}
+  thrown in /home/avltree/anjay/web/core/Classes/Model.php on line 104
+[27-Jan-2018 20:10:44 Asia/Jakarta] PHP Notice:  Undefined variable: relation in /home/avltree/anjay/web/core/Classes/Model.php on line 86
+[27-Jan-2018 20:10:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/avltree/anjay/web/core/Classes/Model.php:104
+Stack trace:
+#0 /home/avltree/anjay/web/core/Classes/Model.php(86): Model::makeObject(Array, NULL)
+#1 /home/avltree/anjay/web/core/Classes/Auth.php(20): Model::find(1)
+#2 /home/avltree/anjay/web/storage/caches/views/087cb90a03c58fab4d8a2c5eba07c2ed(3): Auth::user()
+#3 /home/avltree/anjay/web/core/Classes/Template/Compiler.php(71): require_once('/home/avltree/a...')
+#4 /home/avltree/anjay/web/core/Classes/View.php(17): Compiler->render()
+#5 /home/avltree/anjay/web/app/Controllers/HomeController.php(47): View::load('user/profile.av...', Array)
+#6 /home/avltree/anjay/web/core/Classes/Router.php(44): HomeController->profile('avltree')
+#7 /home/avltree/anjay/web/core/autoload.php(72): Router->__construct()
+#8 /home/avltree/anjay/web/index.php(39): require_once('/home/avltree/a...')
+#9 {main}
+  thrown in /home/avltree/anjay/web/core/Classes/Model.php on line 104
+[27-Jan-2018 20:11:01 Asia/Jakarta] PHP Notice:  Undefined variable: relation in /home/avltree/anjay/web/core/Classes/Model.php on line 86
+[27-Jan-2018 20:11:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/avltree/anjay/web/core/Classes/Model.php:104
+Stack trace:
+#0 /home/avltree/anjay/web/core/Classes/Model.php(86): Model::makeObject(Array, NULL)
+#1 /home/avltree/anjay/web/core/Classes/Auth.php(20): Model::find(1)
+#2 /home/avltree/anjay/web/app/Controllers/HomeController.php(13): Auth::user()
+#3 /home/avltree/anjay/web/core/Classes/Router.php(46): HomeController->index()
+#4 /home/avltree/anjay/web/core/autoload.php(72): Router->__construct()
+#5 /home/avltree/anjay/web/index.php(39): require_once('/home/avltree/a...')
+#6 {main}
+  thrown in /home/avltree/anjay/web/core/Classes/Model.php on line 104
+[27-Jan-2018 20:11:24 Asia/Jakarta] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/avltree/anjay/web/storage/caches/views/54336246bcc70df5b41a89fe1b1585bd on line 8
+[27-Jan-2018 20:13:16 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined method Question::getId() in /home/avltree/anjay/web/storage/caches/views/087cb90a03c58fab4d8a2c5eba07c2ed:22
+Stack trace:
+#0 /home/avltree/anjay/web/core/Classes/Template/Compiler.php(71): require_once()
+#1 /home/avltree/anjay/web/core/Classes/View.php(17): Compiler->render()
+#2 /home/avltree/anjay/web/app/Controllers/HomeController.php(47): View::load('user/profile.av...', Array)
+#3 /home/avltree/anjay/web/core/Classes/Router.php(44): HomeController->profile('avltree')
+#4 /home/avltree/anjay/web/core/autoload.php(72): Router->__construct()
+#5 /home/avltree/anjay/web/index.php(39): require_once('/home/avltree/a...')
+#6 {main}
+  thrown in /home/avltree/anjay/web/storage/caches/views/087cb90a03c58fab4d8a2c5eba07c2ed on line 22
+[27-Jan-2018 20:13:28 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined method Question::getId() in /home/avltree/anjay/web/storage/caches/views/087cb90a03c58fab4d8a2c5eba07c2ed:22
+Stack trace:
+#0 /home/avltree/anjay/web/core/Classes/Template/Compiler.php(71): require_once()
+#1 /home/avltree/anjay/web/core/Classes/View.php(17): Compiler->render()
+#2 /home/avltree/anjay/web/app/Controllers/HomeController.php(47): View::load('user/profile.av...', Array)
+#3 /home/avltree/anjay/web/core/Classes/Router.php(44): HomeController->profile('avltree')
+#4 /home/avltree/anjay/web/core/autoload.php(72): Router->__construct()
+#5 /home/avltree/anjay/web/index.php(39): require_once('/home/avltree/a...')
+#6 {main}
+  thrown in /home/avltree/anjay/web/storage/caches/views/087cb90a03c58fab4d8a2c5eba07c2ed on line 22
+[27-Jan-2018 20:28:08 Asia/Jakarta] PHP Warning:  htmlentities() expects parameter 1 to be string, object given in /home/avltree/anjay/web/app/helpers.php on line 104
+[27-Jan-2018 20:28:28 Asia/Jakarta] PHP Warning:  htmlentities() expects parameter 1 to be string, object given in /home/avltree/anjay/web/app/helpers.php on line 104
+[27-Jan-2018 20:28:30 Asia/Jakarta] PHP Warning:  htmlentities() expects parameter 1 to be string, object given in /home/avltree/anjay/web/app/helpers.php on line 104
+[27-Jan-2018 20:30:34 Asia/Jakarta] PHP Warning:  htmlentities() expects parameter 1 to be string, object given in /home/avltree/anjay/web/app/helpers.php on line 103
+[27-Jan-2018 20:31:56 Asia/Jakarta] PHP Warning:  htmlentities() expects parameter 1 to be string, object given in /home/avltree/anjay/web/app/helpers.php on line 104
+[27-Jan-2018 20:32:12 Asia/Jakarta] PHP Warning:  htmlentities() expects parameter 1 to be string, object given in /home/avltree/anjay/web/app/helpers.php on line 104
+[27-Jan-2018 20:32:37 Asia/Jakarta] PHP Warning:  htmlentities() expects parameter 1 to be string, object given in /home/avltree/anjay/web/app/helpers.php on line 104
+[27-Jan-2018 20:32:50 Asia/Jakarta] PHP Warning:  htmlentities() expects parameter 1 to be string, object given in /home/avltree/anjay/web/app/helpers.php on line 104
+[27-Jan-2018 20:33:36 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ';' in /home/avltree/anjay/web/app/helpers.php on line 48
+[27-Jan-2018 20:33:42 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ';' in /home/avltree/anjay/web/app/helpers.php on line 48
